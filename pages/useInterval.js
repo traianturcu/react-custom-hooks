@@ -33,6 +33,9 @@ const useInterval = (callback, delay) => {
 
 export default useInterval;`}
       </pre>
+      <p>
+        <Link href="/readme">credits</Link>
+      </p>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Search from "@/demo-components/Search";
 import styles from "../styles/Demo.module.css";
 
-const DebounceDemo = () => {
+const UseDebounceDemoPage = () => {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.header}>
@@ -31,8 +31,11 @@ const useDebounce = (value, delay) => {
 
 export default useDebounce;`}
       </pre>
+      <p>
+        <Link href="/readme">credits</Link>
+      </p>
     </div>
   );
 };
 
-export default DebounceDemo;
+export default UseDebounceDemoPage;

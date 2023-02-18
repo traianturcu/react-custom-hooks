@@ -34,6 +34,9 @@ const useTimeout = (callback, delay) => {
 export default useTimeout;
 `}
       </pre>
+      <p>
+        <Link href="/readme">credits</Link>
+      </p>
     </div>
   );
 };
