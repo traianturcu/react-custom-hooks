@@ -24,3 +24,11 @@
   padding: 20px;
   background-color: #fff;
 }
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+}

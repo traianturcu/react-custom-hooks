@@ -15,14 +15,21 @@ export default function Home() {
         <h1 className={styles.title}>React Custom Hooks</h1>
 
         <div className={styles.grid}>
-          <Link href="/useIntervalDemo" className={styles.card}>
+          <Link href="/useInterval" className={styles.card}>
             <h2>useInterval</h2>
             <p>
               <code>a declarative version of setInterval</code>
             </p>
           </Link>
 
-          <Link href="/useDebounceDemo" className={styles.card}>
+          <Link href="/useTimeout" className={styles.card}>
+            <h2>useTimeout</h2>
+            <p>
+              <code>a declarative version of setTimeout</code>
+            </p>
+          </Link>
+
+          <Link href="/useDebounce" className={styles.card}>
             <h2>useDebounce</h2>
             <p>
               <code>debounce / throttle values</code>
@@ -31,7 +38,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>credits in README.md</footer>
+      <footer className={styles.footer}>
+        <Link href="/readme">credits in README.md</Link>
+      </footer>
     </div>
   );
 }

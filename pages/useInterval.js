@@ -2,15 +2,15 @@ import Link from "next/link";
 import Stopwatch from "@/demo-components/Stopwatch";
 import styles from "../styles/Demo.module.css";
 
-const useIntervalDemo = () => {
+const UseIntervalDemoPage = () => {
   return (
     <div className={styles.wrapper}>
-      <h1>
+      <h1 className={styles.header}>
         {" "}
         <Link className={styles.home} href="/">
           &lt;&lt;&nbsp;&nbsp;&nbsp;
         </Link>{" "}
-        useInterval Demo
+        useInterval
       </h1>
       <Stopwatch />
       <pre className={styles.code}>
@@ -37,4 +37,4 @@ export default useInterval;`}
   );
 };
 
-export default useIntervalDemo;
+export default UseIntervalDemoPage;

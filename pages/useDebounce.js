@@ -2,15 +2,15 @@ import Link from "next/link";
 import Search from "@/demo-components/Search";
 import styles from "../styles/Demo.module.css";
 
-const useDebounceDemo = () => {
+const DebounceDemo = () => {
   return (
     <div className={styles.wrapper}>
-      <h1>
+      <h1 className={styles.header}>
         {" "}
         <Link className={styles.home} href="/">
           &lt;&lt;&nbsp;&nbsp;&nbsp;
         </Link>{" "}
-        useDebounce Demo
+        useDebounce
       </h1>
       <Search />
       <pre className={styles.code}>
@@ -35,4 +35,4 @@ export default useDebounce;`}
   );
 };
 
-export default useDebounceDemo;
+export default DebounceDemo;
