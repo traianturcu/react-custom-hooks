@@ -14,6 +14,12 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>React Custom Hooks</h1>
 
+        <p className={styles.description}>
+          <Link href="https://github.com/traianturcu/react-custom-hooks" target="_blank">
+            https://github.com/traianturcu/react-custom-hooks
+          </Link>
+        </p>
+
         <div className={styles.grid}>
           <Link href="/useInterval" className={styles.card}>
             <h2>useInterval</h2>
