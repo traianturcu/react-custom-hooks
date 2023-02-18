@@ -1,0 +1,18 @@
+.label {
+  font-size: 2rem;
+}
+
+.button {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.time {
+  font-weight: 600;
+}

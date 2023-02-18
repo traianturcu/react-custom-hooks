@@ -1,0 +1,3 @@
+const isFunction = (fn) => !!(typeof fn === "function" && !!fn.call && !!fn.apply && !!fn.constructor);
+
+export default isFunction;

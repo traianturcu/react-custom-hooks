@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/custom-hooks/*": ["custom-hooks/*"],
+      "@/demo-components/*": ["demo-components/*"]
+    }
+  }
+}
