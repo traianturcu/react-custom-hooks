@@ -1,17 +1,15 @@
 import Link from "next/link";
 import Search from "@/demo-components/Search";
 import styles from "../styles/Demo.module.css";
+import { FaHome } from "react-icons/fa";
 
 const UseDebounceDemoPage = () => {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header}>
-        {" "}
-        <Link className={styles.home} href="/">
-          &lt;&lt;&nbsp;&nbsp;&nbsp;
-        </Link>{" "}
-        useDebounce
-      </h1>
+      <Link className={styles.home} href="/">
+        <FaHome />
+      </Link>
+      <h1 className={styles.header}>useDebounce</h1>
       <Search />
       <pre className={styles.code}>
         {`import { useState, useEffect } from "react";

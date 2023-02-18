@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../styles/Demo.module.css";
+import { FaHome } from "react-icons/fa";
 
 const ReadMePage = () => {
   const [txt, setTxt] = useState("");
@@ -16,13 +17,10 @@ const ReadMePage = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header}>
-        {" "}
-        <Link className={styles.home} href="/">
-          &lt;&lt;&nbsp;&nbsp;&nbsp;
-        </Link>{" "}
-        README.md
-      </h1>
+      <Link className={styles.home} href="/">
+        <FaHome />
+      </Link>
+      <h1 className={styles.header}>README.md</h1>
       <pre className={styles.code}>{txt}</pre>
     </div>
   );

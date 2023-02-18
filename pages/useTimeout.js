@@ -1,17 +1,15 @@
 import Link from "next/link";
 import Bomb from "@/demo-components/Bomb";
 import styles from "../styles/Demo.module.css";
+import { FaHome } from "react-icons/fa";
 
 const UseTimeoutPage = () => {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header}>
-        {" "}
-        <Link className={styles.home} href="/">
-          &lt;&lt;&nbsp;&nbsp;&nbsp;
-        </Link>{" "}
-        useTimeout
-      </h1>
+      <Link className={styles.home} href="/">
+        <FaHome />
+      </Link>
+      <h1 className={styles.header}>useTimeout</h1>
       <Bomb />
       <pre className={styles.code}>
         {`import { useEffect, useRef } from "react";

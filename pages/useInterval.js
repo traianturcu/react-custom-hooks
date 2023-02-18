@@ -1,17 +1,15 @@
 import Link from "next/link";
 import Stopwatch from "@/demo-components/Stopwatch";
 import styles from "../styles/Demo.module.css";
+import { FaHome } from "react-icons/fa";
 
 const UseIntervalDemoPage = () => {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header}>
-        {" "}
-        <Link className={styles.home} href="/">
-          &lt;&lt;&nbsp;&nbsp;&nbsp;
-        </Link>{" "}
-        useInterval
-      </h1>
+      <Link className={styles.home} href="/">
+        <FaHome />
+      </Link>
+      <h1 className={styles.header}>useInterval</h1>
       <Stopwatch />
       <pre className={styles.code}>
         {`import { useEffect, useRef } from "react";
