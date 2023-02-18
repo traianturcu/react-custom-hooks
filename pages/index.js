@@ -31,9 +31,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        credits in <code>README.md</code>
-      </footer>
+      <footer className={styles.footer}>credits in README.md</footer>
     </div>
   );
 }
