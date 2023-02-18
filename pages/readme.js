@@ -9,7 +9,7 @@ const ReadMePage = ({ txt }) => {
       <Link className={styles.home} href="/">
         <FaHome />
       </Link>
-      <h1 className={styles.header}>README.md</h1>
+      <h1 className={styles.header}>README</h1>
       <pre className={styles.code}>{txt}</pre>
     </div>
   );
