@@ -3,18 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Demo.module.css";
 import { FaHome } from "react-icons/fa";
 
-const ReadMePage = () => {
-  const [txt, setTxt] = useState("");
-
-  useEffect(() => {
-    const getReadme = async () => {
-      const txt = await fetch("/api/readme").then((res) => res.text());
-      setTxt(txt);
-    };
-
-    getReadme();
-  }, []);
-
+const ReadMePage = ({ txt }) => {
   return (
     <div className={styles.wrapper}>
       <Link className={styles.home} href="/">
@@ -27,3 +16,17 @@ const ReadMePage = () => {
 };
 
 export default ReadMePage;
+
+export async function getServerSideProps(context) {
+  const txt = await fetch("https://raw.githubusercontent.com/traianturcu/react-custom-hooks/main/README.md").then((res) => res.text());
+
+  if (!txt) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { txt }, // will be passed to the page component as props
+  };
+}
