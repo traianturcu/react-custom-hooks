@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,19 +15,19 @@ export default function Home() {
         <h1 className={styles.title}>React Custom Hooks</h1>
 
         <div className={styles.grid}>
-          <a href="/useIntervalDemo" className={styles.card}>
+          <Link href="/useIntervalDemo" className={styles.card}>
             <h2>useInterval</h2>
             <p>
               <code>a declarative version of setInterval</code>
             </p>
-          </a>
+          </Link>
 
-          <a href="/useDebounceDemo" className={styles.card}>
+          <Link href="/useDebounceDemo" className={styles.card}>
             <h2>useDebounce</h2>
             <p>
               <code>debounce / throttle values</code>
             </p>
-          </a>
+          </Link>
         </div>
       </main>
 
